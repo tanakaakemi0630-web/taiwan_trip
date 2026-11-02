@@ -1,1 +1,131 @@
-# taiwan_trip
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>台北3泊4日 旅行日程表</title>
+<style>
+:root{--bg:#f6f7f3;--card:#fff;--ink:#1c2830;--sub:#5d6b72;--line:#d9dfdb;--jade:#2b7a68;--lamp:#c98a10;--tint:#e8f1ed;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){color-scheme:dark;--bg:#12191d;--card:#1a2328;--ink:#e8eeea;--sub:#9fb0b4;--line:#2b383e;--jade:#6cc3ad;--lamp:#e9b44c;--tint:#1d2e2b}}
+:root[data-theme="dark"]{color-scheme:dark;--bg:#12191d;--card:#1a2328;--ink:#e8eeea;--sub:#9fb0b4;--line:#2b383e;--jade:#6cc3ad;--lamp:#e9b44c;--tint:#1d2e2b}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.75 "Hiragino Sans","Yu Gothic UI","Noto Sans JP","Meiryo",sans-serif}
+main{max-width:1180px;margin:0 auto;padding:28px 18px 56px}
+h1{font-size:2rem;line-height:1.3;margin:0 0 4px}
+.lead{color:var(--sub);margin:0 0 24px}
+.grid{display:grid;gap:22px;grid-template-columns:1fr}
+@media (min-width:1000px){.grid{grid-template-columns:minmax(0,1fr) 280px;align-items:start}.side{position:sticky;top:16px}}
+h2{font-size:1.05rem;margin:0 0 10px;padding-left:10px;border-left:4px solid var(--jade)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin:0 0 12px}
+.card b{display:block;margin-bottom:2px}
+.sub{color:var(--sub);font-size:.88rem}
+.rail{list-style:none;margin:0;padding:0 0 0 12px;border-left:2px solid var(--line);font-size:.88rem;line-height:1.5}
+.rail li{position:relative;padding:0 0 10px 12px}
+.rail li::before{content:"";position:absolute;left:-18px;top:.45em;width:8px;height:8px;border-radius:50%;background:var(--jade)}
+.rail a{color:inherit;text-decoration:none;display:block}
+.rail .d{display:block;margin:4px 0 6px -12px;font-weight:700;color:var(--jade)}
+.rail .d::before{display:none}
+.t{display:inline-block;min-width:4.6em;color:var(--lamp);font-weight:700}
+.day{margin:0 0 28px}
+.day h3{margin:0 0 10px;font-size:1.1rem}
+.day h3 span{color:var(--sub);font-weight:400;font-size:.9rem;margin-left:8px}
+ol.tl{list-style:none;margin:0;padding:0 0 0 14px;border-left:2px solid var(--line)}
+ol.tl li{position:relative;padding:0 0 12px 16px}
+ol.tl li::before{content:"";position:absolute;left:-21px;top:.7em;width:10px;height:10px;border-radius:50%;background:var(--bg);border:2px solid var(--jade)}
+.note{background:var(--tint);border-radius:8px;padding:8px 12px;font-size:.9rem;margin:6px 0 0}
+a.map{display:inline-block;margin:4px 6px 0 0;padding:2px 10px;border:1px solid var(--jade);border-radius:999px;color:var(--jade);font-size:.85rem;text-decoration:none}
+a.map:hover,a.map:focus-visible{background:var(--jade);color:var(--bg)}
+.cost dl{margin:0}
+.cost dt{margin-top:8px;font-size:.92rem}
+.cost dd{margin:0;text-align:right;font-weight:700}
+.cost .tot{border-top:1px solid var(--line);margin-top:10px;padding-top:6px}
+.cost .tbd{font-weight:400;color:var(--sub)}
+.scroll{overflow-x:auto}
+table{border-collapse:collapse;width:100%;min-width:460px;font-size:.9rem}
+th,td{text-align:left;padding:7px 8px;border-bottom:1px solid var(--line)}
+th{color:var(--sub)}
+footer{margin-top:30px;color:var(--sub);font-size:.85rem}
+@media print{:root:not([data-theme="light"]){color-scheme:light;--bg:#fff;--card:#fff;--ink:#1c2830;--sub:#5d6b72;--line:#d9dfdb;--jade:#2b7a68;--lamp:#c98a10;--tint:#e8f1ed}main{max-width:none;padding:0}.grid{grid-template-columns:1fr}.side{position:static}.day,.card{break-inside:avoid}}
+</style>
+</head>
+<body>
+<main>
+<h1>台北 3泊4日</h1>
+<p class="lead">2027年1月10日(日)〜13日(水)・札幌発着・2人旅</p>
+
+<div class="grid">
+
+
+<section><h2>予定表</h2>
+
+<div class="card"><b>ホテル:ガイドホテル台北チョンチン(承攜行旅 重慶館)</b>
+62, Sec. 1, Chong Qing N. Rd., Datong District, Taipei 103(台北市大同區重慶北路一段62號)
+<div class="sub">チェックイン 16:00〜/チェックアウト 11:00。台北駅まで徒歩約12分、寧夏夜市まで徒歩約5分。</div></div>
+
+<div class="day" id="d1"><h3>1/10(日)到着日<span>夜市とグルメ</span></h3>
+<ol class="tl">
+<li><span class="t">10:40</span>新千歳空港発(チャイナエアライン)</li>
+<li><span class="t">14:15</span>桃園空港着(目安。eチケットで確認)。入国手続き・荷物受取</li>
+<li><span class="t">15:30頃</span>空港MRT(直達車)で台北駅へ。約35分<br><a class="map" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&origin=Taiwan+Taoyuan+International+Airport+Terminal+2&destination=Guide+Hotel+Taipei+Chongqing&travelmode=transit">空港→ホテルのルート</a></li>
+<li><span class="t">16:30頃</span>ホテル着。チェックイン</li>
+<li><span class="t">夜</span>寧夏夜市で夕食と食べ歩き<br><a class="map" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&origin=Guide+Hotel+Taipei+Chongqing&destination=Ningxia+Night+Market+Taipei&travelmode=walking">ホテル→夜市(徒歩)</a></li>
+</ol></div>
+
+<div class="day" id="d2"><h3>1/11(月)台北市内<span>朝食・台北101・散策・マッサージ・小籠包</span></h3>
+<ol class="tl">
+<li><span class="t">朝</span>ホテル周辺で朝食(豆漿や蛋餅など、台湾の朝ごはん)<br><a class="map" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=breakfast+near+Guide+Hotel+Taipei+Chongqing">ホテル周辺の朝食を探す</a></li>
+<li><span class="t">昼</span>MRTなどで台北101へ移動<br><a class="map" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&origin=Guide+Hotel+Taipei+Chongqing&destination=Taipei+101&travelmode=transit">ホテル→台北101</a></li>
+<li><span class="t">午後</span>台北101の展望台へ。オンライン予約がおすすめ。日没の時間帯に合わせるなら16時台の入場が目安<div class="note">天気次第で時間を調整できる余裕を</div></li>
+<li><span class="t">夕方</span>101周辺(信義エリア)を散策。カフェやかき氷もこのあたりで</li>
+<li><span class="t">夕方〜夜</span>マッサージ</li>
+<li><span class="t">夜</span>小籠包のお店で夕食(店は未定。台北101の中にも鼎泰豊の支店あり)<br><a class="map" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&origin=Taipei+101&destination=Guide+Hotel+Taipei+Chongqing&travelmode=transit">台北101→ホテル</a></li>
+</ol></div>
+
+<div class="day" id="d3"><h3>1/12(火)九份・十分<span>個人で電車とバス</span></h3>
+<ol class="tl">
+<li><span class="t">朝</span>台北駅から台鉄で瑞芳へ(約1時間弱)<br><a class="map" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&origin=Taipei+Main+Station&destination=Ruifang+Station&travelmode=transit">台北駅→瑞芳駅</a></li>
+<li><span class="t">昼</span>瑞芳から平溪線で十分へ(約30分)。天灯上げと散策<br><a class="map" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&origin=Ruifang+Station&destination=Shifen+Station&travelmode=transit">瑞芳駅→十分駅</a><div class="note">平溪線は本数が少ないので、十分の電車の時間を先に決めて逆算を</div></li>
+<li><span class="t">夕方</span>瑞芳に戻り、バスかタクシーで九份へ。灯りの時間帯を楽しむ<br><a class="map" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&origin=Shifen+Station&destination=Jiufen+Old+Street&travelmode=transit">十分→九份老街</a></li>
+<li><span class="t">夜</span>バスで台北へ戻る(混みやすいので余裕を)。時間があればマッサージ<br><a class="map" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&origin=Jiufen+Old+Street&destination=Guide+Hotel+Taipei+Chongqing&travelmode=transit">九份→ホテル</a></li>
+</ol></div>
+
+<div class="day" id="d4"><h3>1/13(水)帰国日</h3>
+<ol class="tl">
+<li><span class="t">8:30頃</span>ホテル出発。台北駅からMRT直達車で空港へ<br><a class="map" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&origin=Guide+Hotel+Taipei+Chongqing&destination=Taiwan+Taoyuan+International+Airport&travelmode=transit">ホテル→桃園空港</a></li>
+<li><span class="t">9:30頃</span>桃園空港着。チェックイン・お土産(ターミナルはeチケットで確認)</li>
+<li><span class="t">12:15</span>桃園空港発(スクート)</li>
+</ol></div>
+
+<h2>空港アクセス(桃園空港 → 台北駅)</h2>
+<div class="card scroll"><table>
+<tr><th>手段</th><th>所要時間</th><th>料金(1人)</th></tr>
+<tr><td>空港MRT(直達車)</td><td>約35分</td><td>150〜160元(約720〜770円)</td></tr>
+<tr><td>1819番バス</td><td>約60分</td><td>133〜164元(約640〜790円)</td></tr>
+<tr><td>タクシー</td><td>約50〜60分</td><td>1台 1,200〜1,900元(約5,700〜9,100円)</td></tr>
+</table></div>
+<p class="sub">1月の台北は雨が多く、気温は15度前後。九份は坂と階段が多いので、歩きやすい靴と雨具を。</p>
+</section>
+
+<aside class="side cost"><h2>費用</h2>
+<div class="card"><dl>
+<dt>航空券 往路(1人53,960円×2名)</dt><dd>107,920円</dd>
+<dt>航空券 復路(1人35,411円×2名)</dt><dd>70,822円</dd>
+<dt>ホテル 3泊(NT$6,951)</dt><dd>約33,300円</dd>
+<dt class="tot">確定分の小計</dt><dd>約212,000円</dd>
+</dl></div>
+<div class="card"><dl>
+<dt>空港MRT(2人・往復)</dt><dd>約2,900〜3,100円</dd>
+<dt>九份・十分の電車とバス</dt><dd class="tbd">未確認</dd>
+<dt>台北101の展望台</dt><dd class="tbd">未定</dd>
+<dt>食事・マッサージ・お土産</dt><dd class="tbd">未定</dd>
+</dl></div>
+<p class="sub">1台湾ドル=約4.79円で換算。実際の請求額はレートと手数料で変わります。</p>
+</aside>
+
+</div>
+<footer>時刻・料金は調べた時点の目安です。地図のリンクはGoogleマップが開きます。出発前に最新情報をご確認ください。</footer>
+</main>
+</body>
+</html>
